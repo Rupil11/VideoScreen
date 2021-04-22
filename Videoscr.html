@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Video Background</title>
+</head>
+<style>
+    *{
+    box-sizing: border-box;
+  }
+
+  body{
+    margin:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:1rem;
+    font-weight:normal;
+    line-height:1.5;
+    color:#333;
+    overflow-x:hidden;
+  }
+
+  .v-header{
+    text-align: left;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    color:rgb(28, 215, 248);
+  }
+
+  .container{
+    max-width:960px;
+    padding-left:1rem;
+    padding-right:1rem;
+    margin:auto;
+    text-align:center;
+  }
+
+  .fullscreen-video-wrap{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+  }
+
+  .fullscreen-video-wrap video{
+    min-height:100%;
+    min-width:100%;
+  }
+
+  .header-overlay{
+    height:100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    z-index:1;
+    background:#ffffff69;
+    
+  }
+
+  .header-content{
+    z-index:2;
+  }
+
+  .header-content h1{
+    font-size:50px;
+    margin-bottom:0;
+  }
+
+  .header-content p{
+    font-size:1.5rem;
+    display:block;
+    padding-bottom:2rem;
+  }
+
+  .btn{
+    background: #34b3a0;
+    color:#fff;
+    font-size:1.2rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+  }
+
+  .section{
+    padding:20px 0;
+  }
+
+  .section-b{
+    background:#333;
+    color:#fff;
+  }
+
+  @media(max-width:960px){
+    .container{
+      padding-right:3rem;
+      padding-left:3rem;
+    }
+  }
+</style>
+<body>
+    <header class="v-header container">
+        <div class="fullscreen-video-wrap">
+            <video width="320" height="240" autoplay loop muted>
+                <source src="file:///C:/Users/HP/Downloads/Untitled%20design.mp4" type="video/mp4">
+                <source src="file:///C:/Users/HP/Downloads/Untitled%20design.ogg" type="video/ogg">
+            </video>
+        </div>
+        <div class="header-overlay"></div>
+        <div class="header-content text-md-center">
+            <h1>Welcome Everyone to
+                <br> our house Party</h1>
+            <p>in Frame ,our Dj Harsh detwal </p>
+            <a class="btn"> join us</a>
+        </div>
+    </header>
+
+    <section class="section section-a">
+        <div class="container">
+            <h2>info.</h2>
+            <p>We are the members of huge community organizing party on next weekend ....</p>
+        </div>
+    </section>
+
+    <section class="section section-b">
+        <div class="container">
+            <h2>contact us</h2>
+            <p> connect with us on our youtube channels and on our IG id @hd_hatk ,<br> @rohit_j ,<br> @iam_rupil </p>
+        </div>
+    </section>
+
+</body>
+
+</html>
